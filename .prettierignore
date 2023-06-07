@@ -1,0 +1,9 @@
+yarn.lock
+.prettierignore
+/build
+/dist
+/node_modules
+tailwind.config
+tsconfig
+vite.config
+yarn-lock
