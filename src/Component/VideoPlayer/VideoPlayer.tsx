@@ -4,6 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import bannerVideo from '../../assets/Videos/Animation_Video_Desktop_Device.mp4';
 import MorphingTextComponent from '../MorphingText/MorphingTextComponent';
 import GrowthCommunityComponent from '../../GrowthCommunity/GrowthCommunityComponent';
+import IphoneBG from '../../assets/Webp Images/iPhone.webp';
+import monstera from '../../assets/Webp Images/monstera-small.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -109,6 +111,16 @@ const VideoPlayer1: React.FC = () => {
           muted
           loop
           className="object-fill fixed h-screen w-full z-10 top-0 right-0 bottom-0 left-0"
+        />
+        <img
+          src={IphoneBG}
+          alt=" Iphone Background"
+          className="md:hidden block z-20 absolute top-0 right-0 bottom-0 left-0"
+        />
+        <img
+          src={monstera}
+          alt=" Iphone Background with leaf"
+          className="md:hidden block z-30 absolute top-20 left-0 w-36"
         />
 
         <MorphingTextComponent />
