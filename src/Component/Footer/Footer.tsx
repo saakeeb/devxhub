@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className="relative z-50 ">
+      <div className="relative z-40 ">
         <div className="animation">
           <svg
             className="waves w-full h-24 sm:h-40"

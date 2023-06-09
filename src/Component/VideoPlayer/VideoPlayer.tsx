@@ -33,9 +33,6 @@ const VideoPlayer1: React.FC = () => {
       video?.pause();
     });
 
-    /* ---------------------------------- */
-    /* Scroll Control! */
-
     gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline({
@@ -113,6 +110,7 @@ const VideoPlayer1: React.FC = () => {
           loop
           className="object-fill fixed h-screen w-full z-10 top-0 right-0 bottom-0 left-0"
         />
+
         <MorphingTextComponent />
         <div className="lg:h-screen lg:block hidden"></div>
         <GrowthCommunityComponent />

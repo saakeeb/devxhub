@@ -9,13 +9,13 @@ const FooterElement4th = () => {
         <ul className="text-[#294617] flex justify-center items-center lg:items-start gap-1 flex-col">
           <li>
             <a href="tel:+240-247-1299" className="flex justify-center items-center gap-4">
-              <MdPhoneInTalk clasName="text-2xl" />
+              <MdPhoneInTalk className="text-2xl" />
               <span className="text-xl"> 240-247-1299 </span>
             </a>
           </li>
           <li>
             <a href="mailto:example@domain.com" className="flex justify-center items-center gap-4">
-              <RiMailFill clasName="text-2xl" />
+              <RiMailFill className="text-2xl" />
               <span className="text-xl"> example@domain.com </span>
             </a>
           </li>
