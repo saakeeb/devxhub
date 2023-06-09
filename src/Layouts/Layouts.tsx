@@ -1,24 +1,8 @@
 import { Outlet, Link } from 'react-router-dom';
-import { RxHamburgerMenu } from 'react-icons/rx';
 import logo from '../assets/SVG/logo.svg';
-import { useEffect, useState } from 'react';
+import SideBar from './SideBar';
 
 const Layouts = () => {
-  const [showButton, setShowButton] = useState(false);
-  // const [showSidebar, setShowSidebar] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setShowButton(scrollPosition > 10);
-    };
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <>
       <div className="layout relative">
@@ -58,11 +42,7 @@ const Layouts = () => {
                 </Link>
               </div>
             </div>
-            <div className={`${showButton ? 'block' : 'hidden'} lg:block`}>
-              <button onClick={() => console.log("Sidebar click")}>
-                <RxHamburgerMenu className="text-3xl text-[#FFECB3]" />
-              </button>
-            </div>
+            <SideBar />
           </div>
         </div>
         <Outlet />

@@ -13,12 +13,12 @@ const ScrollButton = () => {
     const scrollButton = scrollButtonRef.current;
 
     const scrollTo = (position: number) => {
-      gsap.to(window, { duration: 10, scrollTo: { y: position, autoKill: false }, ease: 'power1.inOut' });
+      gsap.to(window, { duration: 12, scrollTo: { y: position, autoKill: false }, ease: 'power1.inOut' });
     };
 
     const handleScroll = () => {
       const isAtTop = window.scrollY === 0;
-      const isAtBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
+      const isAtBottom = window.innerHeight + window.scrollY + 240 >= document.body.offsetHeight;
 
       if (scrollButton) {
         if (isAtTop) {

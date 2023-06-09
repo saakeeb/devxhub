@@ -43,7 +43,7 @@ const Footer = () => {
             <g className="parallax">
               <use xlinkHref="#gentle-wave" x="48" y="0" fill="rgb(244,161,38,0.8)" ref={waveRef1} />
               <use xlinkHref="#gentle-wave" x="48" y="3" fill="rgb(244,161,38,0.5)" ref={waveRef2} />
-              <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgb(244,161,38,0.3)" ref={waveRef3} />
+              <use xlinkHref="#gentle-wave" x="48" y="5" fill="rgb(244,161,38,0.1)" ref={waveRef3} />
               <use xlinkHref="#gentle-wave" x="48" y="7" fill="#fff" ref={waveRef4} />
             </g>
           </svg>

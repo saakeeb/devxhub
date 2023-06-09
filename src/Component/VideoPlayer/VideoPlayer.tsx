@@ -102,7 +102,7 @@ const VideoPlayer1: React.FC = () => {
 
   return (
     <div className="relative">
-      <section className="relative">
+      <section className="relative overflow-hidden">
         <video
           ref={videoRef}
           src={bannerVideo}
