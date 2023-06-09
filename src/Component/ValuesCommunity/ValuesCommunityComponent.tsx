@@ -1,5 +1,5 @@
 import ValuesCommunity from './ValuesCommunity';
-import healingBg from '../assets/Webp Images/healing-site-event-bg.webp';
+import healingBg from '../../assets/Webp Images/healing-site-event-bg.webp';
 
 const ValuesCommunityComponent = () => {
   return (

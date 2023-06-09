@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import bannerVideo from '../../assets/Videos/Animation_Video_Desktop_Device.mp4';
 import MorphingTextComponent from '../MorphingText/MorphingTextComponent';
-import GrowthCommunityComponent from '../../GrowthCommunity/GrowthCommunityComponent';
+import GrowthCommunityComponent from '../GrowthCommunity/GrowthCommunityComponent';
 import IphoneBG from '../../assets/Webp Images/iPhone.webp';
 import monstera from '../../assets/Webp Images/monstera-small.webp';
 

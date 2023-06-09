@@ -1,10 +1,10 @@
 import { useRef, useState, useLayoutEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import gather from '../assets/Webp Images/tree-plant.webp';
-import gatherM from '../assets/Webp Images/Tree_Planting_Festiva.webp';
-import community from '../assets/Webp Images/island_hills.webp';
-import healing from '../assets/Webp Images/track_at_hill.webp';
+import gather from '../../assets/Webp Images/tree-plant.webp';
+import gatherM from '../../assets/Webp Images/Tree_Planting_Festiva.webp';
+import community from '../../assets/Webp Images/island_hills.webp';
+import healing from '../../assets/Webp Images/track_at_hill.webp';
 import ImageElement from './ImageElement';
 
 const ValuesCommunity = () => {

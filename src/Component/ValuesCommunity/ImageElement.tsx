@@ -1,4 +1,4 @@
-import { ImageElementProps } from '../Component/ComponentTypes/ComponentsType';
+import { ImageElementProps } from '../ComponentTypes/ComponentsType';
 
 const ImageElement = ({ imageDesk, imageMob, text }: ImageElementProps) => {
   return (

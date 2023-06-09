@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import community from '../assets/Webp Images/middle-right-section.webp';
+import community from '../../assets/Webp Images/middle-right-section.webp';
 
 const GrowthCommunity = () => {
   const [animationInBrief, setAnimationInBrief] = useState<boolean>(false);

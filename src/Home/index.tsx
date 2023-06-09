@@ -1,7 +1,7 @@
 import Footer from '../Component/Footer/Footer';
 import ScrollButton from '../Component/ScrollButton/ScrollButton';
 import VideoPlayer from '../Component/VideoPlayer/VideoPlayer';
-import ValuesCommunityComponent from '../ValuesCommunity/ValuesCommunityComponent';
+import ValuesCommunityComponent from '../Component/ValuesCommunity/ValuesCommunityComponent';
 
 const Home = () => {
   return (
