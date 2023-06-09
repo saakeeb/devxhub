@@ -20,6 +20,9 @@ const FooterElement = () => {
           <FooterElement4th />
         </div>
       </div>
+      <div>
+        <p className="text-[#294617] py-8 text-center">© Freedom Healing Church Inc. 2023</p>
+      </div>
     </>
   );
 };

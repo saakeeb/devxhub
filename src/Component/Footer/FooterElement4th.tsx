@@ -1,5 +1,9 @@
 import { MdPhoneInTalk } from 'react-icons/md';
 import { RiMailFill } from 'react-icons/ri';
+import facebook from '../../assets/SVG/facebook.svg';
+import twitter from '../../assets/SVG/twitter.svg';
+import linkedin  from '../../assets/SVG/linkedin.svg';
+import instagram from '../../assets/SVG/instagram.svg';
 
 const FooterElement4th = () => {
   return (
@@ -17,6 +21,30 @@ const FooterElement4th = () => {
             <a href="mailto:example@domain.com" className="flex justify-center items-center gap-4">
               <RiMailFill className="text-2xl" />
               <span className="text-xl"> example@domain.com </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="mt-8">
+        <ul className="flex justify-center items-center gap-4">
+          <li className="rounded-full w-10">
+            <a href="/" className="" rel="noopener noreferrer">
+              <img src={facebook} alt="facebook" />
+            </a>
+          </li>
+          <li className="rounded-full w-10">
+            <a href="/" className="" rel="noopener noreferrer">
+              <img src={twitter} alt="twitter" />
+            </a>
+          </li>
+          <li className="rounded-full w-10">
+            <a href="/" className="" rel="noopener noreferrer">
+              <img src={linkedin} alt="linkedin" />
+            </a>
+          </li>
+          <li className="rounded-full w-10">
+            <a href="/" className="" rel="noopener noreferrer">
+              <img src={instagram} alt="instagram" className="w-full rounded-full" />
             </a>
           </li>
         </ul>
