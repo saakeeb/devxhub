@@ -1,5 +1,3 @@
-
-
 const FooterElement1st = () => {
   return (
     <>

@@ -2,7 +2,7 @@ import { MdPhoneInTalk } from 'react-icons/md';
 import { RiMailFill } from 'react-icons/ri';
 import facebook from '../../assets/SVG/facebook.svg';
 import twitter from '../../assets/SVG/twitter.svg';
-import linkedin  from '../../assets/SVG/linkedin.svg';
+import linkedin from '../../assets/SVG/linkedin.svg';
 import instagram from '../../assets/SVG/instagram.svg';
 
 const FooterElement4th = () => {

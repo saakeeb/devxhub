@@ -1,7 +1,7 @@
-import FooterElement1st from "./FooterElement1st";
-import FooterElement2nd from "./FooterElement2nd";
-import FooterElement3rd from "./FooterElement3rd";
-import FooterElement4th from "./FooterElement4th";
+import FooterElement1st from './FooterElement1st';
+import FooterElement2nd from './FooterElement2nd';
+import FooterElement3rd from './FooterElement3rd';
+import FooterElement4th from './FooterElement4th';
 
 const FooterElement = () => {
   return (
