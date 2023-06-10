@@ -95,7 +95,7 @@ const MorphingText = ({ textList }: MorphingTextProps) => {
         id="container"
         ref={containerRef}
         className="filter-blur-06
-         absolute lg:text-right m-auto z-20  py-4 font-raleway top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
+         absolute lg:text-right m-auto z-20  py-4 font-f-raleway top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
       >
         <span
           id="text1"

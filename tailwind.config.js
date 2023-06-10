@@ -6,6 +6,9 @@ export default {
       filter: {
         'blur-06': 'url(#threshold) blur(0.6px)',
       },
+      fontFamily: {
+        "f-raleway": ['Raleway', 'sans-serif'],
+      },
     },
     screens: {
       "sm": '320px',
@@ -17,4 +20,3 @@ export default {
   },
   plugins: [],
 };
-

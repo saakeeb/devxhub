@@ -4,8 +4,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import community from '../../assets/Webp Images/middle-right-section.webp';
 
 const GrowthCommunity = () => {
-  const [animationInBrief, setAnimationInBrief] = useState<boolean>(false);
-  const [animationInCommunity, setAnimationInCommunity] = useState<boolean>(false);
+  const [animationInBrief, setAnimationInBrief] = useState(false);
+  const [animationInCommunity, setAnimationInCommunity] = useState(false);
   const briefRef = useRef(null);
   const communityRef = useRef(null);
 
@@ -38,16 +38,16 @@ const GrowthCommunity = () => {
       gsap.registerPlugin(ScrollTrigger);
       gsap.fromTo(
         communityElement,
-        { x: '100%', y: '100%', scale: 0.3 },
+        { x: '300%', scale: 0.4 },
         {
           x: 0,
-          y: 0,
           scale: 1,
           duration: 1,
-          ease: 'power3.out',
+          ease: 'power4.out',
           scrollTrigger: {
             trigger: '.growth',
-            scrub: true
+            scrub: true,
+            start: 'bottom bottom' // Trigger when element reaches the bottom of the viewport
           }
         }
       );
