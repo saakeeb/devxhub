@@ -6,6 +6,7 @@ import MorphingTextComponent from '../MorphingText/MorphingTextComponent';
 import GrowthCommunityComponent from '../GrowthCommunity/GrowthCommunityComponent';
 import IphoneBG from '../../assets/Webp Images/iPhone.webp';
 import monstera from '../../assets/Webp Images/monstera-small.webp';
+import mobBG from '../../assets/Webp Images/mobBG.webp';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -110,7 +111,12 @@ const VideoPlayer1: React.FC = () => {
           src={bannerVideo}
           muted
           loop
-          className="object-fill fixed h-screen w-full z-10 top-0 right-0 bottom-0 left-0"
+          className="object-fill fixed h-screen w-full z-10 top-0 right-0 bottom-0 left-0 hidden md:block"
+        />
+        <img
+          src={mobBG}
+          alt="Mobile Background"
+          className="md:hidden block z-10 object-fill fixed h-screen top-0 right-0 bottom-0 left-0"
         />
         <img
           src={IphoneBG}
