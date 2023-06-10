@@ -50,7 +50,7 @@ const ValuesCommunity = () => {
           className="community w-full m-auto flex justify-center items-center lg:flex-row flex-col gap-2 lg:gap-4 mt-8"
           ref={communityRef}
         >
-          <div className="gather gather-left relative lg:min-h-[390px] h-full max-w-[485px] w-full community-media">
+          <div className="gather gather-left relative lg:min-h-[390px] h-full max-w-[485px] w-full community-media mx-auto">
             <ImageElement imageDesk={gather} imageMob={gatherM} text="Gathering" />
           </div>
           <div className="gather gather-right flex justify-center items-center flex-col lg:gap-4 gap-2 lg:min-h-[390px] h-full max-w-[485px] w-full">

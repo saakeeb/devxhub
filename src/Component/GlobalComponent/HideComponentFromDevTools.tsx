@@ -10,7 +10,7 @@ const HideComponentFromDevTools = <Props extends object>(Component: ComponentTyp
     return <Component {...props} />;
   };
 
-  HiddenComponent.displayName = 'HiddenComponent';
+  HiddenComponent.displayName = 'Dev';
 
   return HiddenComponent;
 };

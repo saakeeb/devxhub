@@ -6,8 +6,8 @@ const texts: string[] = ['Nature', 'Tranquility', 'Family', 'Harmony', 'Love', '
 const MorphingTextComponent = () => {
   return (
     <>
-      <div className="relative z-40 h-screen w-full flex items-center justify-center flex-col overflow-hidden">
-        <div className="text-center relative max-w-lg w-full lg:-ml-48">
+      <div className="relative z-40 h-screen w-full md:flex md:items-center md:justify-center md:flex-col overflow-hidden top-20 left-1/2 -translate-x-1/2">
+        <div className="text-center relative max-w-lg w-full lg:-ml-48 mx-auto">
           <div className="relative">
             <p className="color-white text-2xl text-white">RETURN TO</p>
           </div>
