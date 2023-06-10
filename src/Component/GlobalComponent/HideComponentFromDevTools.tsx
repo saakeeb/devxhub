@@ -1,5 +1,5 @@
 import React, { ComponentType, useEffect } from 'react';
-import hideReactDevtools  from 'react-devtools-inline';
+import hideReactDevtools from 'react-devtools-inline';
 
 const HideComponentFromDevTools = <Props extends object>(Component: ComponentType<Props>) => {
   const HiddenComponent: React.FC<Props> = (props) => {

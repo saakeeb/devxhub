@@ -1,4 +1,9 @@
-import { FooterComponent,  ScrollButtonComponent, ValuesCommunityComponent, VideoPlayerComponent } from '../Component/GlobalComponent';
+import {
+  FooterComponent,
+  ScrollButtonComponent,
+  ValuesCommunityComponent,
+  VideoPlayerComponent
+} from '../Component/GlobalComponent';
 
 const Home = () => {
   return (
