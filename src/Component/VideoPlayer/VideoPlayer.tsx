@@ -120,7 +120,7 @@ const VideoPlayer1: React.FC = () => {
         />
         <img
           src={IphoneBG}
-          alt=" Iphone Background"
+          alt=" Hero Top Background"
           className="md:hidden block z-20 absolute top-0 right-0 bottom-0 left-0"
         />
         <img

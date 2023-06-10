@@ -1,19 +1,16 @@
-import Footer from '../Component/Footer/Footer';
-import ScrollButton from '../Component/ScrollButton/ScrollButton';
-import VideoPlayer from '../Component/VideoPlayer/VideoPlayer';
-import ValuesCommunityComponent from '../Component/ValuesCommunity/ValuesCommunityComponent';
+import { FooterComponent,  ScrollButtonComponent, ValuesCommunityComponent, VideoPlayerComponent } from '../Component/GlobalComponent';
 
 const Home = () => {
   return (
     <>
       <div className="relative">
-        <VideoPlayer />
+        <VideoPlayerComponent />
         <ValuesCommunityComponent />
         <div className="scroll-button z-50 sticky border-3 border-red-800 h-8 w-8 left-1/2 -translate-x-1/2 bottom-12">
-          <ScrollButton />
+          <ScrollButtonComponent />
         </div>
       </div>
-      <Footer />
+      <FooterComponent />
     </>
   );
 };

@@ -10,32 +10,32 @@ const Footer = () => {
 
   useLayoutEffect(() => {
     const tl = gsap.timeline({ repeat: -1, repeatDelay: 0 });
-    tl.to(waveRef1.current, { x: 85, duration: 12, ease: 'power1.inOut' });
+    tl.to(waveRef1.current, { x: 85, duration: 5, ease: 'power1.inOut' });
   }, []);
   useLayoutEffect(() => {
     const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.1 });
-    tl.to(waveRef2.current, { x: 85, duration: 12, ease: 'power1.inOut' });
+    tl.to(waveRef2.current, { x: 85, duration: 5, ease: 'power1.inOut' });
   }, []);
   useLayoutEffect(() => {
     const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.2 });
-    tl.to(waveRef3.current, { x: 85, duration: 12, ease: 'power1.inOut' });
+    tl.to(waveRef3.current, { x: 85, duration: 5, ease: 'power1.inOut' });
   }, []);
   useLayoutEffect(() => {
-    const tl = gsap.timeline({ repeat: -1, repeatDelay: 0 });
-    tl.to(waveRef4.current, { x: 85, duration: 15, ease: 'power1.inOut' });
+    const tl = gsap.timeline({ repeat: -1, repeatDelay: 0.3 });
+    tl.to(waveRef4.current, { x: 85, duration: 6, ease: 'power1.inOut' });
   }, []);
 
   return (
     <>
-      <div className="relative z-40 ">
+      <div className="relative z-40 overflow-hidden">
         <div className="animation">
           <svg
-            className="waves"
+            className="waves lg:h-32 h-10 w-screen"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 24 150 28"
             preserveAspectRatio="none"
-            shape-rendering="auto"
+            shapeRendering="auto"
           >
             <defs>
               <path
