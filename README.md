@@ -24,9 +24,9 @@ yarn start:local
 Open [ http://localhost:3000/](http://localhost:3000/) with your browser to see the result.
 
 - Project Tree
-
+```
 DEVxHUB
-├── cypress
+┌──cypress
 │   ├── ...
 ├── dist
 │   ├── ...
@@ -55,10 +55,11 @@ DEVxHUB
 ├── vite.config.ts
 ├── yarn-error.log
 └── yarn.lock
+```
 
 - Technology Used
-
-├── React.Js
+```
+┌── React.Js
 ├── Typescript
 ├── Tailwind
 ├── GSAP
@@ -68,6 +69,6 @@ DEVxHUB
 ├── EsLint
 ├── React Icons
 └── Cypress
-
+```
 - Before Running Cypress add `|| 3000` to `vite.config.ts`
 - Testing with cypress needs to improve
