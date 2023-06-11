@@ -19,7 +19,7 @@ const GrowthCommunity = () => {
         { y: '100%', scale: 0.3 },
         {
           y: 0,
-          scale: 1,
+          scale: 1, // size will increase
           duration: 1,
           ease: 'power3.out',
           scrollTrigger: {
@@ -41,7 +41,7 @@ const GrowthCommunity = () => {
         { x: '300%', scale: 0.4 },
         {
           x: 0,
-          scale: 1,
+          scale: 1, // size will increase
           duration: 1,
           ease: 'power4.out',
           scrollTrigger: {

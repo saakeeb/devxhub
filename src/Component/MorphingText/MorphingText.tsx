@@ -43,7 +43,7 @@ const MorphingText = ({ textList }: MorphingTextProps) => {
       fraction = 1 - fraction;
 
       if (elts.text1) {
-        elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+        elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`; //blur effect
         elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
         elts.text1.textContent = textList[textIndex % textList.length];
       }

@@ -9,6 +9,7 @@ const Footer = () => {
   const waveRef3 = useRef(null);
   const waveRef4 = useRef(null);
 
+  // add different position and duration for each wave
   useLayoutEffect(() => {
     const tl = gsap.timeline({ repeat: -1, repeatDelay: 0 });
     tl.to(waveRef1.current, { x: 85, duration: 5, ease: 'power1.inOut' });

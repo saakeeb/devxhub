@@ -10,7 +10,7 @@ const HideComponents = <Props extends object>(Component: ComponentType<Props>) =
     return <Component {...props} />;
   };
 
-  HiddenComponent.displayName = 'Dev';
+  HiddenComponent.displayName = 'Dev'; // Give the component name "Dev" in chrome dev tools in components tab
 
   return HiddenComponent;
 };

@@ -83,7 +83,7 @@ const SideBar = () => {
             </li>
             <li className="my-4 text-2xl">
               <a href="/" rel="noopener noreferrer">
-                Contact{' '}
+                Contact
               </a>
             </li>
           </ul>

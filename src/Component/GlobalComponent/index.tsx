@@ -4,6 +4,7 @@ import ScrollButton from '../ScrollButton/ScrollButton';
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import ValuesCommunity from '../ValuesCommunity/ValuesCommunityComponent';
 
+// Hiding components
 export const VideoPlayerComponent = HideComponents(VideoPlayer);
 export const ScrollButtonComponent = HideComponents(ScrollButton);
 export const ValuesCommunityComponent = HideComponents(ValuesCommunity);

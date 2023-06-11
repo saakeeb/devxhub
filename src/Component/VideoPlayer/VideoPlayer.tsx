@@ -106,14 +106,14 @@ const VideoPlayer1: React.FC = () => {
   return (
     <div className="relative">
       <section className="relative overflow-hidden">
-        <video
+        <video // video for desktop view in the bg
           ref={videoRef}
           src={bannerVideo}
           muted
           loop
           className="object-fill fixed h-screen w-full z-10 top-0 right-0 bottom-0 left-0 hidden md:block"
         />
-        <img
+        <img // image for mobile view in the bg
           src={mobBG}
           alt="Mobile bottom Background"
           className="md:hidden block z-10 object-fill fixed h-screen top-0 right-0 bottom-0 left-0 w-screen"

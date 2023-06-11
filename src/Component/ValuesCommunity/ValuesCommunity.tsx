@@ -21,7 +21,7 @@ const ValuesCommunity = () => {
         communityElement,
         { scale: 0.3 },
         {
-          scale: 1,
+          scale: 1, // size increaze
           duration: 1,
           ease: 'power3.out',
           scrollTrigger: {

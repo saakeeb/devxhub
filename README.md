@@ -67,3 +67,7 @@ DEVxHUB
 ├── Vite
 ├── EsLint
 ├── React Icons
+└── Cypress
+
+- Before Running Cypress add `|| 3000` to `vite.config.ts`
+- Testing with cypress needs to improve
