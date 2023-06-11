@@ -20,7 +20,6 @@ const VideoPlayer1: React.FC = () => {
     const container = containerRef.current;
 
     const src = video?.currentSrc || video?.src;
-    console.log(video, src);
 
     const once = (el: HTMLElement, event: string, fn: (...args: []) => void, opts?: AddEventListenerOptions) => {
       const onceFn = (...args: []) => {
