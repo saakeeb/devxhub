@@ -1,5 +1,6 @@
-import SocialMedia from '../SocialMedia/SocialMedia';
-import MorphingText from './MorphingText';
+import React from 'react';
+const SocialMedia = React.lazy(() => import('../SocialMedia/SocialMedia'));
+const MorphingText = React.lazy(() => import('./MorphingText'));
 
 const texts: string[] = ['Nature', 'Tranquility', 'Family', 'Harmony', 'Love', 'Home', 'Community', 'Health'];
 

@@ -3,6 +3,7 @@ yarn.lock
 .yarn/*
 build/*
 dist/*
+cypress/*
 node_modules/*
 tailwind.config.js
 tsconfig.json

@@ -1,5 +1,7 @@
-import ValuesCommunity from './ValuesCommunity';
+import React from 'react';
 import healingBg from '../../assets/Webp Images/healing-site-event-bg.webp';
+
+const ValuesCommunity = React.lazy(() => import('./ValuesCommunity'));
 
 const ValuesCommunityComponent = () => {
   return (

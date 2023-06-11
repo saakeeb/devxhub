@@ -1,6 +1,7 @@
-import { useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
-import FooterElement from './FooterElement';
+
+const FooterElement = React.lazy(() => import('./FooterElement'));
 
 const Footer = () => {
   const waveRef1 = useRef(null);

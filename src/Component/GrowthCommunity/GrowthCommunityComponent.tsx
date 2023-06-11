@@ -1,4 +1,5 @@
-import GrowthCommunity from './GrowthCommunity';
+import React from 'react';
+const GrowthCommunity = React.lazy(() => import('./GrowthCommunity'));
 
 const GrowthCommunityComponent = () => {
   return (
