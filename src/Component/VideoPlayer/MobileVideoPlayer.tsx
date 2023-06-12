@@ -7,14 +7,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const MobileVideoPlayer: React.FC = () => {
   // make references
-  const videoRef = useRef<HTMLVideoElement>(null);
+  const mobVideoRef = useRef<HTMLVideoElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
-    const video = videoRef.current;
+    const video = mobVideoRef.current;
     const container = containerRef.current;
 
-    // const src = video?.currentSrc || video?.src;
+    const src = video?.currentSrc || video?.src;
 
     const once = (el: HTMLElement, event: string, fn: (...args: []) => void, opts?: AddEventListenerOptions) => {
       const onceFn = (...args: []) => {
@@ -36,9 +36,9 @@ const MobileVideoPlayer: React.FC = () => {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: container,
-        // onUpdate: (self) => console.log('Update', self.progress.toFixed(3)),
-        // onToggle: (self) => console.log('Toggle', self.isActive),
-        // start: 'top top',
+        onUpdate: (self) => console.log('Update', self.progress.toFixed(3)),
+        onToggle: (self) => console.log(' Toggle', self.isActive),
+        start: 'top top',
         end: 'bottom bottom',
         scrub: true
       }
@@ -59,16 +59,39 @@ const MobileVideoPlayer: React.FC = () => {
         }
       });
     }
+
+    /* When first coded, the Blobbing was important to ensure the browser wasn't dropping previously played segments, but it doesn't seem to be a problem now. Possibly based on memory availability? */
+    setTimeout(function () {
+      if (src) {
+        fetch(src)
+          .then((response) => response.blob())
+          .then((response) => {
+            const blobURL = URL.createObjectURL(response);
+
+            const t = video?.currentTime ?? 0;
+            once(document.documentElement, 'touchstart', function () {
+              video?.play();
+              video?.pause();
+            });
+
+            if (video) {
+              video.setAttribute('src', blobURL);
+              video.currentTime = t + 0.01;
+            }
+          });
+      }
+    }, 1000);
   }, []);
 
   useEffect(() => {
-    const video = videoRef.current;
+    const video = mobVideoRef.current;
 
     const checkVideoEnd = () => {
       if (video && video.ended) {
         video.style.display = 'none'; // Hide the video when it ends
       }
     };
+
     video?.addEventListener('ended', checkVideoEnd);
 
     return () => {
@@ -78,7 +101,7 @@ const MobileVideoPlayer: React.FC = () => {
 
   return (
     <video // video for mobile view in the bg
-      ref={videoRef}
+      ref={mobVideoRef}
       src={ipadVideo}
       muted
       loop

@@ -8,7 +8,7 @@ const Layouts = () => {
       <div className="layout relative">
         <div className="navbar flex justify-between items-center py-6 px-4 lg:py-8 lg:px-16 fixed top-4 left-4 right-4 lg:left-8 lg:right-8 z-50">
           <div>
-            <Link to="/" aria-label="Link to landing page" className='devxhub-logo'>
+            <Link to="/" aria-label="Link to landing page" className="devxhub-logo">
               <img src={logo} alt="DEVxHUB logo" />
             </Link>
           </div>

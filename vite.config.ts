@@ -8,6 +8,6 @@ dotenv.config();
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: parseInt(process.env.LOCAL_PORT),
+    port: parseInt(process.env.LOCAL_PORT)
   }
 });

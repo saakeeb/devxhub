@@ -14,7 +14,7 @@ const ScrollButton = () => {
 
     const scrollTo = (position: number) => {
       // animation time duration, with autokill to stop animation when user interact with the scroll
-      gsap.to(window, { duration: 12, scrollTo: { y: position, autoKill: true }, ease: 'power1.inOut' }); 
+      gsap.to(window, { duration: 12, scrollTo: { y: position, autoKill: true }, ease: 'power1.inOut' });
     };
 
     const handleScroll = () => {
@@ -22,11 +22,13 @@ const ScrollButton = () => {
       const isAtBottom = window.innerHeight + window.scrollY + 240 >= document.body.offsetHeight; // bottom position
 
       if (scrollButton) {
-        if (isAtTop) { //It will check if view point is at top of the page
+        if (isAtTop) {
+          //It will check if view point is at top of the page
           scrollButton.removeEventListener('click', scrollToTop);
           scrollButton.addEventListener('click', scrollToBottom);
           setPointer(false);
-        } else if (isAtBottom) { // it will check if view point is at bottom of the page
+        } else if (isAtBottom) {
+          // it will check if view point is at bottom of the page
           scrollButton.removeEventListener('click', scrollToBottom);
           scrollButton.addEventListener('click', scrollToTop);
           setPointer(true);
