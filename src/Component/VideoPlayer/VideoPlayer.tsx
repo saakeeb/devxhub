@@ -20,8 +20,6 @@ const VideoPlayer: React.FC = () => {
     const video = videoRef.current;
     const container = containerRef.current;
 
-    const src = video?.currentSrc || video?.src;
-
     const once = (el: HTMLElement, event: string, fn: (...args: []) => void, opts?: AddEventListenerOptions) => {
       const onceFn = (...args: []) => {
         el.removeEventListener(event, onceFn);
@@ -39,7 +37,7 @@ const VideoPlayer: React.FC = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     const tl = gsap.timeline({
-      defaults: { duration: 2 },
+      defaults: { duration: 1 },
       scrollTrigger: {
         trigger: container,
         start: 'top top',
@@ -57,34 +55,12 @@ const VideoPlayer: React.FC = () => {
               currentTime: 0
             },
             {
-              currentTime: 10
+              currentTime: 100
             }
           );
         }
       });
     }
-
-    /* When first coded, the Blobbing was important to ensure the browser wasn't dropping previously played segments, but it doesn't seem to be a problem now. Possibly based on memory availability? */
-    setTimeout(function () {
-      if (src) {
-        fetch(src)
-          .then((response) => response.blob())
-          .then((response) => {
-            const blobURL = URL.createObjectURL(response);
-
-            const t = video?.currentTime ?? 0;
-            once(document.documentElement, 'touchstart', function () {
-              video?.play();
-              video?.pause();
-            });
-
-            if (video) {
-              video.setAttribute('src', blobURL);
-              video.currentTime = t + 0.01;
-            }
-          });
-      }
-    }, 1000);
   }, []);
 
   useEffect(() => {
@@ -111,24 +87,10 @@ const VideoPlayer: React.FC = () => {
           src={bannerVideo}
           muted
           loop
+          playsInline // Added playsInline for Safari compatibility
           className="object-fill fixed h-screen w-full z-10 top-0 right-0 bottom-0 left-0 hidden md:block"
         />
         <MobileVideoPlayer />
-        {/* <img // image for mobile view in the bg
-          src={mobBG}
-          alt="Mobile bottom Background"
-          className="md:hidden block z-10 object-fill fixed h-screen top-0 right-0 bottom-0 left-0 w-screen"
-        /> */}
-        {/* <img
-          src={IphoneBG}
-          alt=" Hero Top Background"
-          className="md:hidden block z-20 absolute top-0 right-0 bottom-0 left-0 w-screen"
-        /> */}
-        {/* <img
-          src={monstera}
-          alt=" Iphone Background with leaf"
-          className="md:hidden block z-30 absolute top-20 left-0 w-36"
-        /> */}
 
         <MorphingTextComponent />
         <div className="h-[150vh]"></div>
