@@ -47,7 +47,7 @@ const GrowthCommunity = () => {
           scrollTrigger: {
             trigger: '.growth',
             scrub: true,
-            start: 'bottom bottom' // Trigger when element reaches the bottom of the viewport
+            start: 'top bottom' // Trigger when element reaches the bottom of the viewport
           }
         }
       );

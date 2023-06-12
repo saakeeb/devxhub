@@ -6,7 +6,7 @@ const ValuesCommunity = React.lazy(() => import('./ValuesCommunity'));
 const ValuesCommunityComponent = () => {
   return (
     <>
-      <div className="relative z-20 flex items-center justify-center w-full h-screen">
+      <div className="relative z-20 flex items-center justify-center w-full h-screen values-community">
         <div className="relative z-40">
           <ValuesCommunity />
         </div>
