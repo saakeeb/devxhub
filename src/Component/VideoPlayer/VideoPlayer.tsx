@@ -131,9 +131,9 @@ const VideoPlayer: React.FC = () => {
         /> */}
 
         <MorphingTextComponent />
-        <div className="lg:h-screen"></div>
+        <div className="h-screen"></div>
         <GrowthCommunityComponent />
-        <div className="lg:h-screen"></div>
+        <div className="h-screen"></div>
       </section>
     </div>
   );
